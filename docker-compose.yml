@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    container_name: jeykiltest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jekyll/jekyll:latest
+    volumes:
+      - ./mds:/usr/src/app
+      - ./docs:/srv/jekyll
+    command: jekyll serve -s /usr/src/app -d /srv/jekyll --watch --verbose --trace
+    ports:
+      - 4000:4000
+
+
+
+
+
+
