@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile
     image: jekyll/jekyll:latest
     volumes:
-      - ./mds:/usr/src/app
-      - ./docs:/srv/jekyll
+      - ./docs:/usr/src/app
+      - ./svr:/srv/jekyll
     command: jekyll serve -s /usr/src/app -d /srv/jekyll --watch --verbose --trace
     ports:
       - 4000:4000
