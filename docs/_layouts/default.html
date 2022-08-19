@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>{{ page.title }}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:description" content=""/>
+<meta property="og:url" content=""/>
+<link rel="stylesheet" href="{{ '/assets/css/app.css' | relative_url }}">
+</head>
+<body class="page--top">
+
+<header>
+  <div id="header">
+    <div class="container">
+      <nav class="hd-nav">
+        <div class="hd-nav-main">
+          <a class="hd-nav-logo" href="/">
+            <img src="{{ '/assets/img/main/logo.png' | relative_url }}" alt="">日本地図学会
+          </a>
+          <button class="hd-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".hd-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="hd-nav-collapse collapse">
+          <ul class="site-navigation">
+            <li>
+              <a href="guide.html" class="ltc-2">活動紹介</a>
+            </li>
+            <li>
+              <a href="member.html" class="ltc-2">入会案内</a>
+            </li>
+            <li>
+              <a href="conference.html" class="ltc-2">大会・例会</a>
+            </li>
+            <li>
+              <a href="journal.html" class="ltc-2">機関誌</a>
+            </li>
+            <li>
+              <a href="prize.html" class="ltc-2">学会賞</a>
+            </li>
+            <li>
+              <a href="contest.html" class="ltc-2">地図展優秀地図</a>
+            </li>
+            <li>
+              <a href="service.html" class="ltc-2">サービス</a>
+            </li>
+            <li>
+              <a href="organization.html" class="ltc-2">組織</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer>
+  <div id="footer">
+    <div class="container">
+      <p class="old"><a href="/archive.html">Old Archives</a></p>
+      <p class="copy">&copy;Japan Cartographers Association.</p>
+    </div>
+  </div>
+</footer>
+<script src="{{ '/assets/js/manifest.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+</body>
+</html>
