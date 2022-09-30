@@ -27,7 +27,7 @@ title: トップページ
     <li>
       <span>{{ post.date | date: "%y/%m/%d" }}</span>
       <span>{{ post.tags.first }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endif %}
   {% endfor %}
@@ -39,7 +39,7 @@ title: トップページ
     {% if post.categories.first == 'topics' %}
     <li>
       <span>{{ post.date | date: "%y/%m/%d" }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
     {% endif %}
   {% endfor %}
