@@ -19,6 +19,7 @@ title: トップページ
 {% include inc_top_test.html %}
 
 
+
 <h2>information</h2>
 <ul>
   {% for post in site.posts %}
